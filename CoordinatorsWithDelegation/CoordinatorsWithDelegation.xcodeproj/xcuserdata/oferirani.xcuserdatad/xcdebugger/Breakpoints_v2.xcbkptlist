@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BE93DFA8-FB82-4960-B32A-3D6BD9A87D13"
+            uuid = "215B73B2-140B-4AE1-9730-0BFA66380526"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoordinatorsWithDelegation/Coordinator/Coordinators/AuthCoordinator.swift"
+            filePath = "CoordinatorsWithDelegation/Coordinator/Coordinators/MainCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "showLoginViewController()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "showBViewController()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
