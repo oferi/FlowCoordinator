@@ -33,7 +33,7 @@ final class ProfileCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.router.push(profileVC)
     }
     
-    private func showForgetPassword(module: ProfileViewController) {
+    private func showForgetPassword(module: ProfileViewControllerProtocol) {
         let coordinator = self.coordinatorFactory.makeChangePasswordCoordinatorBox(router: self.router, viewControllerFactory: self.viewControllerFactory)
         coordinator.finishFlow = { [unowned self, weak module, unowned coordinator] in
             self.removeDependency(coordinator)
@@ -56,5 +56,4 @@ final class ProfileCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.coordinatorFactory = coordinatorFactory
         self.viewControllerFactory = viewControllerFactory
     }
-    
 }

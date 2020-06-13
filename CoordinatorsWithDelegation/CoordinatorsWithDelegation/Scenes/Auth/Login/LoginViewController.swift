@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginViewControllerProtocol: class {
+protocol LoginViewControllerProtocol: class, Presentable {
     var onLogin: (() -> Void)? { get set }
     var onRegister: (() -> Void)? { get set }
     var onChangePassword: (() -> Void)? { get set }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol WalktroughViewControllerProtocol: class {
+protocol WalktroughViewControllerProtocol: class, Presentable {
     var onFinish: (() -> Void)? { get set }
 }
 

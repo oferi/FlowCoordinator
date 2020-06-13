@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ProfileViewControllerProtocol: class {
+protocol ProfileViewControllerProtocol: class, Presentable {
     var onBack: (() -> Void)? { get set }
     var onChangePassword: (() -> Void)? { get set }
     

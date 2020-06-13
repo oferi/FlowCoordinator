@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RegisterViewControllerProtocol: class {
+protocol RegisterViewControllerProtocol: class, Presentable {
     var onRegister: (() -> Void)? { get set }
     var onBack: (() -> Void)? { get set }
 }

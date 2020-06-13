@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BViewControllerProtocol: class {
+protocol BViewControllerProtocol: class, Presentable {
     var onBack: (() -> Void)? { get set }
     var onLogout: (() -> Void)? { get set }
 }

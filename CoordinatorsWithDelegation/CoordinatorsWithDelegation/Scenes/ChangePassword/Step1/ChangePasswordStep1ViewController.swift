@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ChangePasswordStep1ViewControllerProtocol: class {
+protocol ChangePasswordStep1ViewControllerProtocol: class, Presentable {
     var onNextStep: (() -> Void)? { get set }
     var onBack: (() -> Void)? { get set }
 }

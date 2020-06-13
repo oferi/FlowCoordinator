@@ -23,12 +23,16 @@ final class ChangePasswordCoordinator: BaseCoordinator, CoordinatorFinishOutput 
     
     private func showChangePasswordStep1() {
         let changePasswordStep1VC = self.viewControllerFactory.instantiateChangePasswordStep1ViewController()
+        // we have the
         changePasswordStep1VC.onBack = { [unowned self] in
             self.finishFlow?()
         }
+        
         changePasswordStep1VC.onNextStep = { [unowned self] in
             self.showChangePasswordStep2()
         }
+        //at this ooint we can mock the puter with something else and do show change password
+            
         self.router.push(changePasswordStep1VC)
     }
     

@@ -47,7 +47,7 @@ final class AuthCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.router.push(registerVC)
     }
     
-    private func showForgetPassword(module: LoginViewController) {
+    private func showForgetPassword(module: LoginViewControllerProtocol) {
         let coordinator = self.coordinatorFactory.makeChangePasswordCoordinatorBox(router: self.router, viewControllerFactory: self.viewControllerFactory)
         coordinator.finishFlow = { [unowned self, weak module, unowned coordinator] in
             self.removeDependency(coordinator)
